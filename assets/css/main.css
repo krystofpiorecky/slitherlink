@@ -1,0 +1,81 @@
+*
+{
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+body
+{
+    background: #333;
+}
+
+.STFUI_select
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 140px;
+}
+
+.STFUI_button
+{
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: 140px;
+}
+
+
+.game
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line
+{
+    background: #444;
+    width: 40px;
+    height: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.line_value
+{
+    width: 34px;
+    height: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.1s;
+}
+    .line_value.true
+    {
+        background: #f7484e;
+        opacity: 1;
+    }
+    .line_value.false
+    {
+        z-index: 1;
+        background: #333;
+        opacity: 1;
+    }
+
+.tile
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #777;
+    font-size: 25px;
+}
+    .tile.done
+    {
+        color: #f7484e;
+    }
